@@ -26,4 +26,10 @@ public class controller {
         model.addAttribute("image", num);
         return "image";
     }
+
+    @GetMapping("/jumsun")
+    public String jumsun(Model model) {
+        Random random = new Random();
+        return "jumsun";
+    }
 }
